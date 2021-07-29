@@ -10,9 +10,7 @@ public class App {
         // intanciar controlador
         ControladorCRUD miControlador = new ControladorCRUD(vista, modelo);
         //lanzar controlador
-        //miControlador.addVista()
-        //miControlador.addModel("Datos", );
-        miControlador.init();
+         miControlador.init();
 
     }
 }

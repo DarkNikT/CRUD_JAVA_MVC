@@ -31,11 +31,9 @@ public class ControladorCRUD implements ActionListener{
     public void actionPerformed(ActionEvent event){
         try{
             //se evalua que boton ha sido presionado
-            switch(event.getActionCommand()){
-                case "AGREGAR":
-                    //le digo al control de la 
-                    //listadoAgregarC.agregarPersona(vistaPrincipal);
-
+            AccionesBtns opt = AccionesBtns.valueOf(event.getActionCommand());
+            switch(opt){
+                case AGREGAR:
                     //1. se pide la info de la ventana y se coloca en el modelo de agregar
                     modelAgregarP.setNombre(vistaPrincipal.getNombre());
                     modelAgregarP.setEdad(vistaPrincipal.getEdad());
@@ -44,17 +42,15 @@ public class ControladorCRUD implements ActionListener{
                     //2.Se actualiza la info en la lista
                     modelListadoP.setPersona(modelAgregarP.getNombre(), modelAgregarP.getEdad());
                     break;
-                case "MOSTRAR":
+                case MOSTRAR:
                     vistaPrincipal.showMensaje(modelListadoP.mostrarRegistros());
                     break;
             }
 
         }catch(Exception ex){
             vistaPrincipal.showMensajeError("", ex);
+            System.out.println(ex);
         }
-        
-
-        
     }    
 
 }
