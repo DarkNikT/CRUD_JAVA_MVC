@@ -2,13 +2,14 @@ package Controlador;
 //import java.awt.event.ActionEvent;
 //import java.awt.event.ActionListener;
 
-import Modelo.ListadoAgregar;
+import Modelo.AgregarPersona;
 import Vista.VistaPrincipal;
-public class ControladorListadoAgregar{
+/** NO usado*/
+public class ControladorAgregarPersona{
     //Atributos
-    private ListadoAgregar listAgregar;
+    private AgregarPersona listAgregar;
 
-    public ControladorListadoAgregar(ListadoAgregar listadoAgregar){
+    public ControladorAgregarPersona(AgregarPersona listadoAgregar){
         listAgregar = listadoAgregar;
     }
     public void agregarPersona(VistaPrincipal vista){

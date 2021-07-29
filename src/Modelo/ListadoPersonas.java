@@ -17,7 +17,6 @@ public class ListadoPersonas {
         }
         return "personas\n"+
             "Nombre \t\t Edad\n"+
-            info;
-        
+            info; 
     }
 }

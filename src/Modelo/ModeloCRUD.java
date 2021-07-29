@@ -1,17 +1,18 @@
 package Modelo;
 import Modelo.*;
+
 public class ModeloCRUD {
     //Modelos 
     private final ListadoPersonas modeloListadoPersonas;
-    private final ListadoAgregar modeloListadoAgregar;
+    private final AgregarPersona modeloAgregarPersona;
     public ModeloCRUD(){
-        modeloListadoAgregar = new ListadoAgregar();
+        modeloAgregarPersona = new AgregarPersona();
         modeloListadoPersonas = new ListadoPersonas();
     }
-    public ListadoAgregar getListadoAgregar(){
-        return modeloListadoAgregar;
+    public AgregarPersona getAgregarPersonaM(){
+        return modeloAgregarPersona;
     }
-    public ListadoPersonas getListadoPersonas(){
+    public ListadoPersonas getListadoPersonasM(){
         return modeloListadoPersonas;
     }
 }

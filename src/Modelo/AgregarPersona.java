@@ -1,6 +1,6 @@
 package Modelo;
 
-public class ListadoAgregar {
+public class AgregarPersona {
     private String nombre;
     private int edad;
 
@@ -13,7 +13,7 @@ public class ListadoAgregar {
     /// caray jajajaj, si se necesitaban los set
     public void setEdad(String edad){
         this.edad = Integer.parseInt(edad);
-        System.out.println(this.edad);
+        //System.out.println(this.edad);
     }
     public void setNombre(String nombre){
         this.nombre = nombre;

@@ -1,7 +1,7 @@
 package Controlador;
 
 import Modelo.ListadoPersonas;
-
+/** NO usado*/
 public class ControladorListadoPersonas { 
     private ListadoPersonas listPersonas;
     public ControladorListadoPersonas(ListadoPersonas listPersonas){
